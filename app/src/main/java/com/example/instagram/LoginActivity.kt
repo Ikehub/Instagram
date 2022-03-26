@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
         user.signUpInBackground { e ->
             if (e == null) {
-                // Hooray! Let them use the app now.
+                goToMainActivity()
             } else {
                 e.printStackTrace()
             }
